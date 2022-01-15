@@ -54,6 +54,12 @@ main{
 /* ,,,,,,,,,,,,,,,,,,,,,
 section starts
 ,,,,,,,,,,,,,,,,,,,,,,,,, */
+.hflex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 .container{
     background-color: #FFFFFF;
     width: 1440px;
@@ -61,7 +67,11 @@ section starts
     margin-bottom: 0px;
 }
 #top-text{
+    /* display: inline; */
     font-size: 24px;
+}
+.top-icon{
+    font-size: 26px;
 }
 .flex{display: flex;
     /* grid;
@@ -89,6 +99,9 @@ section starts
     background-color: #E02C6D;
     padding: 10px 24px;
    
+}
+.influencer:hover{
+    transform: scale(1.03);
 }
 .fa-long-arrow-alt-right{
     font-size: 20px;
@@ -126,6 +139,17 @@ collection area
     justify-items: center;
     margin-left: 196px;padding-left: 25px;
 }
+.rd{
+    border: 2px solid rgb(252, 223, 169);
+    margin-right: 45px;
+    margin-left: 0px;margin-bottom: 20px;
+}
+.rd:hover{
+    transform: scale(1.03);
+}
+.stars{
+    color: #FB8200;
+}
 .icon-right{
     color:#E02C6DDE;
     font: size 24px;text-align: right;
@@ -142,3 +166,31 @@ collection area
    background-color:#0A0826;
    margin top: 0px;
 }
+/* ..................................
+responsive
+.................................... */
+/* mobail divice */
+@media only screen and (max-width:688px){
+    
+    .hflex{
+        width: 50%;
+        flex-direction: column;
+    }
+    .collections{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .flex{
+        flex-direction: column-reverse;
+    }
+    
+}
+@media only screen and(min: width 687p)and(max-width:1180px){
+.collections{
+    background-color: cadetblue;
+}
+}
+@media screen {
+    
+}
+    
+
