@@ -132,4 +132,13 @@ collection area
     padding-right: 221px;
     margin-bottom: 100px;
 }
-
+#last-img{
+    padding-left: 165px;
+    margin-right: 96px;
+}
+#footer{
+   text-align: center;
+   color:#FFFFFF ;
+   background-color:#0A0826;
+   margin top: 0px;
+}
